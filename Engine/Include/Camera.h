@@ -14,6 +14,9 @@ public:
 	// Camera matrix
 	glm::mat4 View;
 
+	glm::vec3 Front;
+	glm::vec3 Position;
+
 	bool proj;
 };
 

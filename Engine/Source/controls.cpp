@@ -63,6 +63,10 @@ void computeMatricesFromInputs(Camera* cam){
 	if (glfwGetKey( window, GLFW_KEY_A ) == GLFW_PRESS){
 		position -= right * deltaTime * speed;
 	}
+
+	cam->Position = position;
+	cam->Front = normalize(direction);
+
 	// Camera matrix
 	cam->View = glm::lookAt(position,           // Camera is here
 							position+direction, // and looks here : at the same position, plus "direction"

@@ -1,3 +1,7 @@
-﻿  Playground_Level.cpp
-  Engine.vcxproj -> C:\Sandbox\Engine\x64\Debug\Engine.exe
-  Engine.vcxproj -> C:\Sandbox\Engine\x64\Debug\Engine.pdb (Partial PDB)
+﻿  Render.cpp
+c:\users\sawyer\desktop\3d-engine\engine\source\render.cpp(82): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\sawyer\desktop\3d-engine\engine\source\render.cpp(83): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\sawyer\desktop\3d-engine\engine\source\render.cpp(110): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\sawyer\desktop\3d-engine\engine\source\render.cpp(111): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  Engine.vcxproj -> C:\Users\Sawyer\Desktop\3D-Engine\Engine\x64\Debug\Engine.exe
+  Engine.vcxproj -> C:\Users\Sawyer\Desktop\3D-Engine\Engine\x64\Debug\Engine.pdb (Partial PDB)

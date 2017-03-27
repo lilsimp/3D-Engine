@@ -7,7 +7,7 @@ static void createCrate(GameObject* cube, glm::vec3 pos, glm::vec3 vel);
 
 void Playground::Load(void)  {
 	// Dark green background
-	glClearColor(0.0f, 0.0f, 0.25f, 0.0f);
+	glClearColor(0.025f, 0.025f, 0.025f, 0.0f);
 	
 	RenderLoad();
 
@@ -27,6 +27,26 @@ void Playground::Init(void)  {
 	
 	obj1 = BaseManager->CreateGameObject("NanoMan", NANOSUIT_MODEL);
 	Transform* ct3 = new Transform(obj1, glm::vec3(2, 2, 2), glm::vec3(0, 2, 0));
+
+	GameObject* post = BaseManager->CreateGameObject(std::string("Post"), POST_MODEL);
+	glm::vec3 pos = glm::vec3(40,2,40);
+	Transform* ct2 = new Transform(post, glm::vec3(8, 10, 8), pos);
+	ct2->Rotation = glm::rotate(glm::cos(135.0f), glm::vec3(0,1,0));
+
+	post = BaseManager->CreateGameObject(std::string("Post"), POST_MODEL);
+	pos = glm::vec3(-40, 2, -40);
+	ct2 = new Transform(post, glm::vec3(8, 10, 8), pos);
+	ct2->Rotation = glm::rotate(glm::cos(45.0f), glm::vec3(0, -1, 0));
+
+	post = BaseManager->CreateGameObject(std::string("Post"), POST_MODEL);
+	pos = glm::vec3(40, 2, -40);
+	ct2 = new Transform(post, glm::vec3(8, 10, 8), pos);
+	ct2->Rotation = glm::rotate(glm::cos(225.0f), glm::vec3(0, 1, 0));
+
+	post = BaseManager->CreateGameObject(std::string("Post"), POST_MODEL);
+	pos = glm::vec3(-40, 2, 40);
+	ct2 = new Transform(post, glm::vec3(8, 10, 8), pos);
+	ct2->Rotation = glm::rotate(glm::cos(-225.0f), glm::vec3(0, -1, 0));
 
 	for (int i = 0; i < 8; ++i) {
 		GameObject* cube = BaseManager->CreateGameObject(std::string("Crate"), CRATE_MODEL);

@@ -1,0 +1,21 @@
+# Material Count: 2
+
+newmtl phong2SG
+Ns 18.00
+Ka 1.00 1.00 1.00
+Kd 0.60 0.58 0.16
+Ks 0.50 0.50 0.50
+Ni 1.00
+d 1.0
+illum 2
+
+newmtl phong3SG
+Ns 18.00
+Ka 1.00 1.00 1.00
+Kd 0.64 0.64 0.64
+Ks 0.50 0.50 0.50
+Ni 1.00
+illum 2
+d 1.0
+map_Kd post_diff.png
+ma_Ks post_spec.png
